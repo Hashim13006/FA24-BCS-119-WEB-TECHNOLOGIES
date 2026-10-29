@@ -63,6 +63,81 @@ body {
     background-color: #333 !important;
 }
 
+
+/* --- SHOP BY CATEGORY MEGA-MENU & MOBILE ACCORDION STYLES --- */
+
+.mobile-accordion-group {
+    display: none;
+}
+
+.dropdown-parent {
+    position: relative;
+}
+
+/* Desktop Full-Width Mega Panel */
+.mega-menu-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 9999;
+}
+
+.mega-menu-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 40px;
+}
+
+.mega-col {
+    flex: 1;
+}
+
+.mega-col h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #352f38;
+}
+
+.mega-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-col li {
+    margin-bottom: 8px;
+}
+
+.mega-col a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.mega-col a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.dropdown-parent:hover .mega-menu-panel,
+.dropdown-parent:focus-within .mega-menu-panel {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+
 @media (max-width: 991px) {
     .logo {
         font-size: 38px;
@@ -75,6 +150,44 @@ body {
     }
     .footer-mission {
         font-size: 34px;
+    }
+
+    .mega-menu-panel {
+        display: none !important;
+    }
+
+    .mobile-accordion-group {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .mobile-accordion-group details {
+        margin-bottom: 10px;
+        background: #f8f9fa;
+        padding: 8px 12px;
+        border-radius: 8px;
+    }
+
+    .mobile-accordion-group summary {
+        font-weight: 600;
+        cursor: pointer;
+        color: #352f38;
+    }
+
+    .mobile-accordion-group ul {
+        list-style: none;
+        padding-left: 15px;
+        margin-top: 8px;
+    }
+
+    .mobile-accordion-group li {
+        margin-bottom: 6px;
+    }
+
+    .mobile-accordion-group a {
+        text-decoration: none;
+        color: #555;
+        font-size: 0.9rem;
     }
 }
 
