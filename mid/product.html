@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-bg">
+
+    <nav class="navbar navbar-expand-lg flex-column px-3 px-lg-4 pt-2 pb-0 bg-site">
+        <div class="d-flex align-items-center gap-2 gap-lg-3 w-100 top-bar">
+            <a class="navbar-brand logo mb-0" href="#">Etsy</a>
+            <button class="btn btn-light rounded-pill fw-semibold text-nowrap px-3 py-2" type="button">
+                <i class="bi bi-list"></i> <span class="d-none d-lg-inline">Categories</span>
+            </button>
+            <form class="search-bar flex-grow-1 position-relative" role="search">
+                <input class="form-control rounded-pill ps-4 pe-5 py-2" type="search" placeholder="Search for anything">
+                <button class="btn search-btn position-absolute top-50 translate-middle-y end-0 me-1 rounded-circle d-flex align-items-center justify-content-center text-white border-0" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <button class="btn btn-light rounded-pill fw-semibold px-3 py-2 text-nowrap" type="button">Sign in</button>
+            <button class="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center" type="button"><i class="bi bi-heart-fill fs-4 text-dark"></i></button>
+            <button class="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center" type="button"><i class="bi bi-bag-fill fs-4 text-dark"></i></button>
+        </div>
+        <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-1 gap-lg-3 py-2">
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#"><i class="bi bi-gift-fill"></i> Gifts</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Top 100 Gifts</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Home Favourites</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Fashion Finds</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Vintage</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Wedding Guide</a></li>
+        </ul>
+    </nav>
+
+    <hr class="my-0 border-secondary-subtle">
+
+    <div class="assurance d-flex justify-content-center align-items-center flex-wrap gap-4 py-4 px-3 bg-assurance border-top border-bottom">
+        <span class="fw-semibold">Shop confidently on Etsy</span>
+        <span class="fw-medium"><i class="bi bi-shield-fill-check"></i> <span class="dashed">Etsy Purchase Protection</span></span>
+        <span class="fw-medium"><i class="bi bi-lock-fill"></i> <span class="dashed">Secure payment options</span></span>
+        <span class="fw-medium"><i class="bi bi-star-fill"></i> <span class="dashed">Verified reviews</span></span>
+    </div>
+
+    <div class="container-fluid px-3 px-lg-5 py-3 crumbs text-center fw-medium">
+        <a href="#" class="text-dark text-decoration-none">Homepage</a> &rsaquo;
+        <a href="#" class="text-dark text-decoration-none">Jewellery</a> &rsaquo;
+        <a href="#" class="text-dark text-decoration-none">Necklaces</a> &rsaquo;
+        <a href="#" class="text-dark text-decoration-none">Monogram &amp; Name Necklaces</a>
+    </div>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+            <div class="d-flex align-items-center gap-2">
+                <h3 class="h3 fw-bold mb-0 text-dark">Similar items</h3>
+                <span class="text-secondary small">Including ads <i class="bi bi-info-circle"></i></span>
+            </div>
+            <a class="fw-bold text-dark text-decoration-none" href="#">See more <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-8 g-3">
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_1.avif" class="card-img-top card-img-custom mb-2" alt="Personalized name necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Personalized Name ...</p>
+                        <p class="sale-price fw-bold mb-0">USD 17.54</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 38.96</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_2.avif" class="card-img-top card-img-custom mb-2" alt="Engraved hearts necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Engraved Hearts Na...</p>
+                        <p class="sale-price fw-bold mb-0">USD 20.04</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 44.54</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_3.avif" class="card-img-top card-img-custom mb-2" alt="Custom 14K gold necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Custom 14K Gold Na...</p>
+                        <p class="text-secondary small mb-1">Ad by Etsy seller</p>
+                        <p class="sale-price fw-bold mb-0">USD 12.50</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 25.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_4.avif" class="card-img-top card-img-custom mb-2" alt="Custom name necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Custom Name Neckl...</p>
+                        <p class="text-secondary small mb-1">Ad by Etsy seller</p>
+                        <p class="sale-price fw-bold mb-0">USD 13.90</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 27.81</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_1.avif" class="card-img-top card-img-custom mb-2" alt="Dainty minimalist necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Dainty Minimalist Na...</p>
+                        <p class="sale-price fw-bold mb-0">USD 16.69</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 33.38</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_2.avif" class="card-img-top card-img-custom mb-2" alt="Custom name necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Custom Name Neckl...</p>
+                        <p class="sale-price fw-bold mb-0">USD 14.14</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 35.34</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_3.avif" class="card-img-top card-img-custom mb-2" alt="Custom 18K gold necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Custom 18K Gold Na...</p>
+                        <p class="sale-price fw-bold mb-0">USD 15.03</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 33.40</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 bg-transparent product-card">
+                    <img src="images/jewellery_4.avif" class="card-img-top card-img-custom mb-2" alt="Personalized initial necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate text-secondary small mb-1">Personalized Initial N...</p>
+                        <p class="sale-price fw-bold mb-0">USD 16.28</p>
+                        <p class="old-price text-secondary small text-decoration-line-through">USD 36.17</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+                <div class="position-relative">
+                    <img src="images/jewellery_1.avif" class="main-img w-100 rounded-4 object-fit-cover shadow-sm" alt="Personalized name necklace">
+                    <span class="position-absolute top-0 start-0 m-3 bg-warning text-dark px-3 py-1 rounded-pill fw-bold small shadow-sm"><span class="dashed">Etsy's Pick</span></span>
+                </div>
+                <p class="mt-3 text-secondary small"><i class="bi bi-flag"></i> Report this item to Etsy</p>
+            </div>
+
+            <div class="col-lg-4">
+                <h1 class="product-title fw-normal mb-3">Personalized Name Necklace, Custom 18K Gold Plated Name Necklace, Minimalist Name...</h1>
+
+                <div class="d-flex align-items-center gap-2 mb-4">
+                    <strong class="text-dark">MuwatiUK</strong>
+                    <i class="bi bi-patch-check-fill text-purple"></i>
+                    <span class="text-dark">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </span>
+                </div>
+
+                <h2 class="h5 fw-bold mb-3">Item highlights</h2>
+                <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-gem"></i> Materials: Copper, Sterling silver</div>
+                <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-rulers"></i> Dimensions: Necklace length: 18 Inches</div>
+                <div class="d-flex align-items-center gap-2 mb-4"><i class="bi bi-vector-pen"></i> Made to order</div>
+
+                <h2 class="h5 fw-bold mb-2">Seller's description</h2>
+                <p class="text-secondary small mb-2">Translated by Google</p>
+                <div class="fw-bold mb-4 d-flex align-items-center gap-2"><i class="bi bi-globe2"></i> See in original language</div>
+
+                <p class="spaced fw-semibold text-secondary mb-3">PERSONALIZED·JEWELRY</p>
+                <p class="mb-2">Handmade with love ♥</p>
+                <p class="mb-2">Handcrafted just for you ♥</p>
+                <p class="mb-3">Celebrate your name, a loved one, or a meaningful word...</p>
+
+                <button class="btn btn-light border rounded-pill px-4 fw-semibold" type="button">View more</button>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+                    <p class="text-danger fw-bold small mb-1">In 20+ baskets</p>
+                    <p class="h3 fw-bold mb-0">Now USD 13.78+</p>
+                    <p class="text-secondary text-decoration-line-through mb-1">USD 30.62+</p>
+                    <p class="text-success fw-medium small mb-3">55% off <i class="bi bi-dot"></i> Sale ends in 4 days</p>
+                    <p class="text-secondary small mb-3">Local taxes included (where applicable)</p>
+
+                    <label class="form-label fw-bold small mb-1">Finish &amp; Length</label>
+                    <select class="form-select rounded-3 mb-3">
+                        <option selected disabled>Select an option</option>
+                        <option>Gold plated, 16 inches</option>
+                        <option>Gold plated, 18 inches</option>
+                        <option>Sterling silver, 18 inches</option>
+                    </select>
+
+                    <label class="form-label fw-bold small mb-1">Style</label>
+                    <select class="form-select rounded-3 mb-3">
+                        <option selected disabled>Select an option</option>
+                        <option>Font 1</option>
+                        <option>Font 2</option>
+                        <option>Font 3</option>
+                    </select>
+
+                    <div class="fw-bold mb-3 d-flex align-items-center gap-2"><i class="bi bi-plus-lg"></i> Add personalisation</div>
+
+                    <label class="form-label fw-bold small mb-1">Quantity</label>
+                    <select class="form-select rounded-3 mb-3">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+
+                    <button class="btn btn-dark w-100 rounded-pill py-3 fw-bold mb-4" type="button">Add to basket</button>
+
+                    <h2 class="h6 fw-bold mb-3 d-flex justify-content-between align-items-center">Delivery &amp; return policies <i class="bi bi-arrow-right"></i></h2>
+                    <div class="border rounded-3 p-3">
+                        <div class="d-flex justify-content-between gap-2 mb-2">
+                            <span class="fw-bold small">Returns &amp; exchanges</span>
+                            <span class="dashed small">Accepted within 14 days</span>
+                        </div>
+                        <div class="d-flex justify-content-between gap-2">
+                            <span class="fw-bold small">Cost to deliver</span>
+                            <span class="small">USD 2.78 to Pakistan. <a href="#" class="text-dark">Change</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <h3 class="h3 fw-bold mb-4 text-dark">Related searches</h3>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+            <div class="col">
+                <div class="card border rounded-4 p-2 d-flex flex-row align-items-center gap-2 h-100 bg-transparent">
+                    <img src="images/jewellery_1.avif" class="rounded-3 object-fit-cover" style="width: 70px; height: 70px;" alt="Name necklace silver">
+                    <p class="fw-bold mb-0 small">Name Necklace Silver</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border rounded-4 p-2 d-flex flex-row align-items-center gap-2 h-100 bg-transparent">
+                    <img src="images/jewellery_3.avif" class="rounded-3 object-fit-cover" style="width: 70px; height: 70px;" alt="Name necklace gold">
+                    <p class="fw-bold mb-0 small">Name Necklace Gold</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border rounded-4 p-2 d-flex flex-row align-items-center gap-2 h-100 bg-transparent">
+                    <img src="images/jewellery_3.avif" class="rounded-3 object-fit-cover" style="width: 70px; height: 70px;" alt="Custom name necklace">
+                    <p class="fw-bold mb-0 small">Custom Name Necklace</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border rounded-4 p-2 d-flex flex-row align-items-center gap-2 h-100 bg-transparent">
+                    <img src="images/jewellery_4.avif" class="rounded-3 object-fit-cover" style="width: 70px; height: 70px;" alt="Custom necklace">
+                    <p class="fw-bold mb-0 small">Custom Necklace</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border rounded-4 p-2 d-flex flex-row align-items-center gap-2 h-100 bg-transparent">
+                    <img src="images/jewellery_2.avif" class="rounded-3 object-fit-cover" style="width: 70px; height: 70px;" alt="Necklace">
+                    <p class="fw-bold mb-0 small">Necklace</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border rounded-4 p-2 d-flex flex-row align-items-center gap-2 h-100 bg-transparent">
+                    <img src="images/jewellery_1.avif" class="rounded-3 object-fit-cover" style="width: 70px; height: 70px;" alt="Jewelry">
+                    <p class="fw-bold mb-0 small">Jewelry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <h3 class="h3 fw-bold mb-3 text-dark">Reviews for this item</h3>
+
+        <div class="d-flex flex-wrap gap-3 mb-4">
+            <strong class="text-dark">What buyers say, summarised by AI:</strong>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-check-lg text-success"></i> Looks great</span>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-check-lg text-success"></i> Love it</span>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-check-lg text-success"></i> Great quality</span>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-check-lg text-success"></i> Perfect gift</span>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-check-lg text-success"></i> As described</span>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill"><i class="bi bi-check-lg text-success"></i> Fast delivery</span>
+        </div>
+
+        <div class="d-flex align-items-center flex-wrap gap-4 mb-4">
+            <div class="d-flex align-items-center gap-3">
+                <span class="display-4 fw-bold">4.8</span>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <div>
+                    <p class="dashed mb-0 small fw-semibold">Item average</p>
+                    <p class="text-secondary small mb-0">(5.2k reviews)</p>
+                </div>
+            </div>
+            <div class="d-flex gap-4 flex-wrap">
+                <div class="d-flex align-items-center gap-2"><span class="ring d-flex align-items-center justify-content-center fw-bold small">4.8</span> Item quality</div>
+                <div class="d-flex align-items-center gap-2"><span class="ring d-flex align-items-center justify-content-center fw-bold small">4.6</span> Delivery</div>
+                <div class="d-flex align-items-center gap-2"><span class="ring d-flex align-items-center justify-content-center fw-bold small">4.8</span> Customer service</div>
+                <div class="d-flex align-items-center gap-2"><span class="ring d-flex align-items-center justify-content-center fw-bold small">94%</span> Buyers recommend</div>
+            </div>
+        </div>
+
+        <div class="d-flex gap-2 flex-wrap mb-4 overflow-x-auto pb-2">
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Suggested <i class="bi bi-caret-down-fill"></i></button>
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Appearance (1948)</button>
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Quality (1362)</button>
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Delivery &amp; Packaging (957)</button>
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Seller service (727)</button>
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Description accuracy (715)</button>
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Value (247)</button>
+            <button class="btn btn-light border rounded-pill px-3 py-2 fw-medium" type="button">Sizing &amp; Fit</button>
+        </div>
+
+        <div class="border-top pt-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center gap-2">
+                    <span class="text-warning">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </span>
+                    <strong class="text-dark">5</strong>
+                    <span class="border rounded-pill px-2 small text-secondary">This item</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-person-circle fs-5"></i>
+                    <strong class="text-dark">Alexandria</strong>
+                    <span>|</span>
+                    <span>26 Oct, 2026</span>
+                </div>
+            </div>
+            <p class="mb-0">Beautiful necklace for my sisters birthday gift. It's well made and exactly as pictured.</p>
+        </div>
+
+        <div class="border-top pt-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center gap-2">
+                    <span class="text-warning">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </span>
+                    <strong class="text-dark">5</strong>
+                    <span class="border rounded-pill px-2 small text-secondary">This item</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 text-secondary small">
+                    <i class="bi bi-person-circle fs-5"></i>
+                    <strong class="text-dark">Brooke</strong>
+                    <span>|</span>
+                    <span>26 Oct, 2026</span>
+                </div>
+            </div>
+            <p class="mb-0">Lovely gold colour and the chain feels sturdy. Arrived earlier than expected.</p>
+        </div>
+    </section>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <h3 class="h3 fw-bold mb-4 text-dark">About this item</h3>
+        <div class="row g-5">
+            <div class="col-md-6">
+                <h4 class="h5 fw-bold mb-3">Highlights</h4>
+                <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-hammer"></i> Handmade</div>
+                <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-gem"></i> Materials: Copper, Sterling silver</div>
+                <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-rulers"></i> Necklace length: 18 Inches</div>
+                <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-vector-pen"></i> Made to order</div>
+            </div>
+            <div class="col-md-6">
+                <h4 class="h5 fw-bold mb-3">Description</h4>
+                <p class="spaced fw-semibold text-secondary mb-2">PERSONALIZED·JEWELRY</p>
+                <p class="mb-2">Handmade with love ♥</p>
+                <p class="mb-2">Handcrafted just for you ♥</p>
+                <p class="mb-0">Celebrate your name, a loved one, or a meaningful word with a necklace made just for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="etsy-footer mt-5 px-4 px-lg-5 py-5 bg-footer">
+        <div class="container-fluid px-0">
+            <div class="mb-5">
+                <h2 class="footer-mission mb-0">We’re on a mission to keep commerce human.</h2>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-6 fw-bold mb-3">Shop</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Gift cards</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Etsy Registry</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Sitemap</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Etsy blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Etsy United Kingdom</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Etsy Germany</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Etsy Canada</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-6 fw-bold mb-3">Sell</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Sell on Etsy</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Teams</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Forums</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Affiliates &amp; Creators</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-6 fw-bold mb-3">About</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Etsy, Inc.</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Policies</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Investors</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Press</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Impact</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Legal imprint</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h3 class="fs-6 fw-bold mb-3">Help</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Help Centre</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Privacy settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+                <button class="store-btn btn btn-dark d-inline-flex align-items-center gap-2 px-3 py-2 rounded-3 text-white fw-bold border-0" type="button">
+                    <i class="bi bi-apple fs-4"></i> Download on the App Store
+                </button>
+                <button class="store-btn btn btn-dark d-inline-flex align-items-center gap-2 px-3 py-2 rounded-3 text-white fw-bold border-0" type="button">
+                    <i class="bi bi-google-play fs-5"></i> GET IT ON Google Play
+                </button>
+            </div>
+            <div class="border-top border-secondary-subtle pt-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+                <div class="fw-bold d-flex align-items-center gap-2 text-dark">
+                    <i class="bi bi-globe"></i> Pakistan
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="d-flex flex-wrap gap-3 text-secondary small">
+                    <span>© 2026 Etsy, Inc.</span>
+                    <a href="#" class="text-secondary text-decoration-none">Terms of Use</a>
+                    <a href="#" class="text-secondary text-decoration-none">Privacy</a>
+                    <a href="#" class="text-secondary text-decoration-none">Interest-based ads</a>
+                    <a href="#" class="text-secondary text-decoration-none">Local Shops</a>
+                    <a href="#" class="text-secondary text-decoration-none">Regions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

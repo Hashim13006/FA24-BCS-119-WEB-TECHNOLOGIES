@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #352f38;
+}
+
+.site-bg {
+    background-color: #faf9f7;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 44px;
+    font-weight: bold;
+    color: #f1641e !important;
+}
+
+.search-btn {
+    width: 42px;
+    height: 42px;
+    background-color: #f1641e !important;
+}
+
+.search-btn:hover {
+    background-color: #d9530f !important;
+}
+
+.product-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.product-card:hover {
+    background-color: #fff !important;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.product-img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gift-img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-pill {
+    max-width: calc(100% - 20px);
+}
+
+.etsy-footer {
+    background-color: #e6e4df;
+}
+
+.footer-mission {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+}
+
+.store-btn:hover {
+    background-color: #333 !important;
+}
+
+@media (max-width: 991px) {
+    .logo {
+        font-size: 38px;
+    }
+    .product-img {
+        height: 260px;
+    }
+    .gift-img {
+        height: 300px;
+    }
+    .footer-mission {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 575px) {
+    .logo {
+        font-size: 32px;
+    }
+    .product-img {
+        height: 190px;
+    }
+    .gift-img {
+        height: 220px;
+    }
+    .footer-mission {
+        font-size: 27px;
+    }
+}

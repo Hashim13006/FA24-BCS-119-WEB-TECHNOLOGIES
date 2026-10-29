@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-bg">
+
+<header>
+    <nav class="navbar navbar-expand-lg flex-column px-3 px-lg-4 pt-2 pb-0">
+        <div class="d-flex align-items-center gap-2 gap-lg-3 w-100">
+            <a class="navbar-brand logo mb-0" href="#">Etsy</a>
+
+            <button class="btn btn-light rounded-pill fw-semibold text-nowrap px-3 py-2" type="button">
+                <i class="bi bi-list"></i>
+                <span class="d-none d-lg-inline">Categories</span>
+            </button>
+
+            <form class="position-relative flex-grow-1" role="search">
+                <input class="form-control rounded-pill ps-4 pe-5 py-2" type="search" placeholder="Search for anything">
+                <button class="btn search-btn position-absolute top-50 translate-middle-y end-0 me-1 rounded-circle d-flex align-items-center justify-content-center text-white border-0" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <button class="btn btn-light rounded-pill fw-semibold px-3 py-2 text-nowrap" type="button">Sign in</button>
+            <button class="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center" type="button"><i class="bi bi-heart-fill fs-4 text-dark"></i></button>
+            <button class="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center" type="button"><i class="bi bi-bag-fill fs-4 text-dark"></i></button>
+        </div>
+
+        <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-1 gap-lg-3 py-2">
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#"><i class="bi bi-gift-fill"></i> Gifts</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Top 100 Gifts</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Home Favourites</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Fashion Finds</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Vintage</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold px-2 py-1 text-dark" href="#">Wedding Guide</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr class="my-0 border-secondary-subtle">
+
+<main>
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+            <h1 class="h3 fw-semibold mb-0 text-dark">Custom made jewellery</h1>
+            <button class="btn btn-outline-dark rounded-pill btn-sm px-3 fw-semibold" type="button">View all</button>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-lg-4">
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <a href="product.html" class="text-decoration-none text-dark">
+                        <img src="images/jewellery_1.avif" class="card-img-top product-img mb-2" alt="Custom name necklace">
+                        <div class="card-body px-1 py-0">
+                            <p class="card-title text-truncate mb-2 text-dark">Custom Name Necklace, Personalized...</p>
+                            <div class="d-flex flex-wrap align-items-center gap-2">
+                                <span class="sale-price fw-bold text-success">USD 12.99</span>
+                                <span class="original-price text-muted text-decoration-line-through small">USD 25.99</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/jewellery_2.avif" class="card-img-top product-img mb-2" alt="Dainty birthstone ring">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Dainty Birthstone Ring in Gold</p>
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <span class="sale-price fw-bold text-success">USD 18.50</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 35.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/jewellery_3.avif" class="card-img-top product-img mb-2" alt="Handwritten signature bracelet">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Handwritten Signature Bracelet</p>
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <span class="sale-price fw-bold text-success">USD 9.75</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 19.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/jewellery_4.avif" class="card-img-top product-img mb-2" alt="Initial coin pendant necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Initial Coin Pendant Necklace</p>
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <span class="sale-price fw-bold text-success">USD 24.99</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 45.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+            <h2 class="h3 fw-semibold mb-0 text-dark">14K Gold tragus</h2>
+            <button class="btn btn-outline-dark rounded-pill btn-sm px-3 fw-semibold" type="button">View all</button>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-lg-4">
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/14k_1.avif" class="card-img-top product-img mb-2" alt="14K solid gold tiny hoop earring">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">14K Solid Gold Tiny Hoop Earring</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 45.00</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/14k_2.avif" class="card-img-top product-img mb-2" alt="Cartilage tragus stud with diamond">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Cartilage Tragus Stud with Diamond</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 120.50</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 150.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/14k_3.avif" class="card-img-top product-img mb-2" alt="Gold helix piercing jewelry">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Gold Helix Piercing Jewelry</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 85.25</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 110.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/14k_4.avif" class="card-img-top product-img mb-2" alt="Minimalist gold conch earring">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Minimalist Gold Conch Earring</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 55.99</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <div class="mb-3">
+            <h2 class="h3 fw-semibold mb-0 text-dark">Gift as special as they are</h2>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-lg-4">
+            <div class="col">
+                <div class="card h-100 border-0 product-card position-relative p-2 bg-transparent">
+                    <img src="images/gift_1.webp" class="card-img-top gift-img mb-2" alt="Personalised tree decorations">
+                    <div class="card-pill position-absolute bottom-0 start-50 translate-middle-x mb-3 bg-white px-3 py-2 rounded-pill shadow-sm d-flex align-items-center gap-2 text-dark fw-semibold small text-nowrap"><i class="bi bi-search"></i> Personalised Tree Decorations</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card position-relative p-2 bg-transparent">
+                    <img src="images/gift_2.webp" class="card-img-top gift-img mb-2" alt="Citrine jewellery">
+                    <div class="card-pill position-absolute bottom-0 start-50 translate-middle-x mb-3 bg-white px-3 py-2 rounded-pill shadow-sm d-flex align-items-center gap-2 text-dark fw-semibold small text-nowrap"><i class="bi bi-search"></i> Citrine Jewellery</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card position-relative p-2 bg-transparent">
+                    <img src="images/gift_3.webp" class="card-img-top gift-img mb-2" alt="Advent calendars">
+                    <div class="card-pill position-absolute bottom-0 start-50 translate-middle-x mb-3 bg-white px-3 py-2 rounded-pill shadow-sm d-flex align-items-center gap-2 text-dark fw-semibold small text-nowrap"><i class="bi bi-search"></i> Advent Calendars</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card position-relative p-2 bg-transparent">
+                    <img src="images/gift_4.webp" class="card-img-top gift-img mb-2" alt="Host and hostess gifts">
+                    <div class="card-pill position-absolute bottom-0 start-50 translate-middle-x mb-3 bg-white px-3 py-2 rounded-pill shadow-sm d-flex align-items-center gap-2 text-dark fw-semibold small text-nowrap"><i class="bi bi-search"></i> Host &amp; Hostess Gifts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-3 px-lg-5 py-4">
+        <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+            <h2 class="h3 fw-semibold mb-0 text-dark">Custom birthday gifts</h2>
+            <button class="btn btn-outline-dark rounded-pill btn-sm px-3 fw-semibold" type="button">View all</button>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 g-lg-4">
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/bday_1.webp" class="card-img-top product-img mb-2" alt="Personalized glasses case">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Personalized Glasses Case, Sunglasses...</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 8.96</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 35.85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/bday_2.avif" class="card-img-top product-img mb-2" alt="Personalized name necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Personalized Name Necklace with Bir...</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 17.58</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 39.05</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/bday_3.webp" class="card-img-top product-img mb-2" alt="Glass birth month flower">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Glass Birth Month Flower, Mini Glass...</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 1.90</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 3.80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 product-card p-2 bg-transparent">
+                    <img src="images/bday_4.webp" class="card-img-top product-img mb-2" alt="Family name necklace">
+                    <div class="card-body px-1 py-0">
+                        <p class="card-title text-truncate mb-2 text-dark">Family Name Necklace with Heart, M...</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="sale-price fw-bold text-success">USD 17.10</span>
+                            <span class="original-price text-muted text-decoration-line-through small">USD 42.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="etsy-footer mt-5 px-3 px-lg-5 py-5">
+    <div class="container-fluid">
+        <div class="mb-5">
+            <h2 class="footer-mission mb-0">We’re on a mission to keep commerce human.</h2>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-6 col-lg-3">
+                <h3 class="fs-6 fw-bold mb-3">Shop</h3>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Gift cards</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Etsy Registry</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Sitemap</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Etsy blog</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Etsy United Kingdom</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Etsy Germany</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Etsy Canada</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h3 class="fs-6 fw-bold mb-3">Sell</h3>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Sell on Etsy</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Teams</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Forums</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Affiliates &amp; Creators</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h3 class="fs-6 fw-bold mb-3">About</h3>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Etsy, Inc.</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Policies</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Investors</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Careers</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Press</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Impact</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Legal imprint</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h3 class="fs-6 fw-bold mb-3">Help</h3>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Help Centre</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Privacy settings</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 mb-4">
+            <button class="btn btn-dark d-inline-flex align-items-center gap-2 px-3 py-2 rounded-3 text-white fw-bold border-0 store-btn" type="button">
+                <i class="bi bi-apple fs-4"></i> Download on the App Store
+            </button>
+            <button class="btn btn-dark d-inline-flex align-items-center gap-2 px-3 py-2 rounded-3 text-white fw-bold border-0 store-btn" type="button">
+                <i class="bi bi-google-play fs-5"></i> GET IT ON Google Play
+            </button>
+        </div>
+
+        <div class="border-top border-secondary-subtle pt-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+            <div class="fw-bold d-flex align-items-center gap-2 text-dark">
+                <i class="bi bi-globe"></i> Pakistan
+            </div>
+
+            <div class="d-flex gap-3">
+                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 text-secondary small">
+                <span>© 2026 Etsy, Inc.</span>
+                <a href="#" class="text-secondary text-decoration-none">Terms of Use</a>
+                <a href="#" class="text-secondary text-decoration-none">Privacy</a>
+                <a href="#" class="text-secondary text-decoration-none">Interest-based ads</a>
+                <a href="#" class="text-secondary text-decoration-none">Local Shops</a>
+                <a href="#" class="text-secondary text-decoration-none">Regions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
