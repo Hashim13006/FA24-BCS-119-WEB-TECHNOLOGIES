@@ -136,6 +136,37 @@ body {
 }
 
 
+/* --- TASK 3: MINI-CART & BADGE STYLES --- */
+
+.cart-badge {
+    font-size: 0.65rem;
+    padding: 0.25em 0.4em;
+}
+
+.mini-cart-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    z-index: 10000;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.mini-cart-panel.show {
+    display: block;
+}
+
+.mini-cart-items {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+
 /* --- RESPONSIVE BREAKPOINTS --- */
 
 @media (max-width: 991px) {
