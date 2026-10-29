@@ -15,10 +15,97 @@
         <div class="d-flex align-items-center gap-2 gap-lg-3 w-100">
             <a class="navbar-brand logo mb-0" href="#">Etsy</a>
 
-            <button class="btn btn-light rounded-pill fw-semibold text-nowrap px-3 py-2" type="button">
-                <i class="bi bi-list"></i>
-                <span class="d-none d-lg-inline">Categories</span>
-            </button>
+            <!-- SHOP BY CATEGORY WRAPPER -->
+            <ul class="navbar-nav me-auto mb-0 list-unstyled">
+                <li class="nav-item dropdown-parent position-relative">
+                    <button class="btn btn-light rounded-pill fw-semibold text-nowrap px-3 py-2" type="button">
+                        <i class="bi bi-list"></i>
+                        <span class="d-none d-lg-inline">Shop by Category</span>
+                    </button>
+
+                    <!-- 1. DESKTOP FULL-WIDTH MEGA-PANEL -->
+                    <div class="mega-menu-panel">
+                        <div class="mega-menu-container">
+                            <div class="mega-col">
+                                <h3>Electronics</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Smartphones</a></li>
+                                    <li><a href="#">Laptops</a></li>
+                                    <li><a href="#">Headphones</a></li>
+                                    <li><a href="#">Cameras</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3>Apparel</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Men's Wear</a></li>
+                                    <li><a href="#">Women's Wear</a></li>
+                                    <li><a href="#">Footwear</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3>Home & Living</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Kitchen</a></li>
+                                    <li><a href="#">Furniture</a></li>
+                                    <li><a href="#">Lighting</a></li>
+                                    <li><a href="#">Decor</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3>Beauty & Health</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Skincare</a></li>
+                                    <li><a href="#">Haircare</a></li>
+                                    <li><a href="#">Makeup</a></li>
+                                    <li><a href="#">Wellness</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. MOBILE ACCORDION -->
+                    <div class="mobile-accordion-group">
+                        <details>
+                            <summary>Electronics</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Smartphones</a></li>
+                                <li><a href="#">Laptops</a></li>
+                                <li><a href="#">Headphones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Apparel</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Men's Wear</a></li>
+                                <li><a href="#">Women's Wear</a></li>
+                                <li><a href="#">Footwear</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Home & Living</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Furniture</a></li>
+                                <li><a href="#">Lighting</a></li>
+                                <li><a href="#">Decor</a></li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Beauty & Health</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Skincare</a></li>
+                                <li><a href="#">Haircare</a></li>
+                                <li><a href="#">Makeup</a></li>
+                                <li><a href="#">Wellness</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </li>
+            </ul>
 
             <form class="position-relative flex-grow-1" role="search">
                 <input class="form-control rounded-pill ps-4 pe-5 py-2" type="search" placeholder="Search for anything">
@@ -29,7 +116,9 @@
 
             <button class="btn btn-light rounded-pill fw-semibold px-3 py-2 text-nowrap" type="button">Sign in</button>
             <button class="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center" type="button"><i class="bi bi-heart-fill fs-4 text-dark"></i></button>
-            <button class="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center" type="button"><i class="bi bi-bag-fill fs-4 text-dark"></i></button>
+       
+                <i class="bi bi-bag-fill fs-4 text-dark"></i>
+            </a>
         </div>
 
         <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-1 gap-lg-3 py-2">
@@ -279,65 +368,4 @@
                 <h3 class="fs-6 fw-bold mb-3">Sell</h3>
                 <ul class="list-unstyled mb-0">
                     <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Sell on Etsy</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Teams</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Forums</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Affiliates &amp; Creators</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-lg-3">
-                <h3 class="fs-6 fw-bold mb-3">About</h3>
-                <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Etsy, Inc.</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Policies</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Investors</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Careers</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Press</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Impact</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Legal imprint</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-lg-3">
-                <h3 class="fs-6 fw-bold mb-3">Help</h3>
-                <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Help Centre</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Privacy settings</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="d-flex flex-wrap gap-3 mb-4">
-            <button class="btn btn-dark d-inline-flex align-items-center gap-2 px-3 py-2 rounded-3 text-white fw-bold border-0 store-btn" type="button">
-                <i class="bi bi-apple fs-4"></i> Download on the App Store
-            </button>
-            <button class="btn btn-dark d-inline-flex align-items-center gap-2 px-3 py-2 rounded-3 text-white fw-bold border-0 store-btn" type="button">
-                <i class="bi bi-google-play fs-5"></i> GET IT ON Google Play
-            </button>
-        </div>
-
-        <div class="border-top border-secondary-subtle pt-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
-            <div class="fw-bold d-flex align-items-center gap-2 text-dark">
-                <i class="bi bi-globe"></i> Pakistan
-            </div>
-
-            <div class="d-flex gap-3">
-                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
-                <a href="#" class="text-dark fs-5 text-decoration-none" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            </div>
-
-            <div class="d-flex flex-wrap gap-3 text-secondary small">
-                <span>© 2026 Etsy, Inc.</span>
-                <a href="#" class="text-secondary text-decoration-none">Terms of Use</a>
-                <a href="#" class="text-secondary text-decoration-none">Privacy</a>
-                <a href="#" class="text-secondary text-decoration-none">Interest-based ads</a>
-                <a href="#" class="text-secondary text-decoration-none">Local Shops</a>
-                <a href="#" class="text-secondary text-decoration-none">Regions</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark
